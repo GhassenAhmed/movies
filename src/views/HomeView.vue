@@ -8,11 +8,10 @@
 <script>
 // @ is an alias to /src
 import home from "@/components/home.vue";
-import footer from "@/components/footer.vue";
 export default {
   name: "HomeView",
   components: {
-    home,footer
+    home
   },
   data(){
     return{

@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        
+        ghassen
     </div>
 </template>
 <script>

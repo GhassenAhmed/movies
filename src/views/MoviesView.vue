@@ -9,11 +9,10 @@
 <script>
 // @ is an alias to /src
 import movies from "@/components/movies.vue";
-import footer from "@/components/footer.vue";
 export default {
   name: "MoviesView",
   components: {
-    movies,footer
+    movies
   },
  
 };

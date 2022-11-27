@@ -48,8 +48,21 @@
     </div>
   </nav>
   <router-view />
+  <footer>
+    <div class="container-fluid">
+      <h5>Ghassen Ahmed DSI22 <i class="fa-regular fa-copyright"></i></h5>
+      <p>Hi! I'm Ghassen. I was born in Bizerte, Tunisia,<br> and now I’m studen bachelor IT at the higher institute of technology of Bizerte</p>
+      <div class="social-media">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 </template>
-
+<script>
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -75,5 +88,14 @@ button {
 }
 .recherche{
   margin-left: 138px;
+}
+footer{
+  background: #cd0753;
+}
+footer h5,p{
+  color:#eeeeee;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
