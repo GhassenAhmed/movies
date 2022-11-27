@@ -49,14 +49,14 @@
   </nav>
   <router-view />
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid py-5">
       <h5>Ghassen Ahmed DSI22 <i class="fa-regular fa-copyright"></i></h5>
       <p>Hi! I'm Ghassen. I was born in Bizerte, Tunisia,<br> and now I’m studen bachelor IT at the higher institute of technology of Bizerte</p>
       <div class="social-media">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" class=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="" class=""><i class="fa-brands fa-twitter"></i></a>
+        <a href="" class=""><i class="fa-brands fa-github"></i></a>
+        <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
@@ -97,5 +97,6 @@ footer h5,p{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom:5px;
 }
 </style>
