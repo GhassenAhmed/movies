@@ -18,21 +18,21 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav px-5">
           <li class="nav-item">
-            <router-link to="/movies" class="nav-link active"
+            <router-link to="/" class="nav-link active"
               >Movies</router-link
             >
           </li>
 
           <li class="nav-item">
-            <router-link to="/actors" class="nav-link">Actors</router-link>
+            <router-link to="" class="nav-link">Actors</router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="/profile" class="nav-link">Profile</router-link>
+            <router-link to="" class="nav-link">Profile</router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="/contact" class="nav-link">Contact</router-link>
+            <router-link to="" class="nav-link">Contact</router-link>
           </li>
         </ul>
         <form class=" recherche d-flex" role="search">

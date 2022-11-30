@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    ghassen
+    
   </div>
   
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "Home",
   props:{
     
   },

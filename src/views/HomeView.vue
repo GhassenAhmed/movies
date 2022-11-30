@@ -1,17 +1,17 @@
 <template>
   <div class=" container events py-5">
-    <home/>
-    <footer></footer>
+    <home>ghassen</home>
+   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import home from "@/components/home.vue";
+import Home from "@/components/Home.vue";
 export default {
   name: "HomeView",
   components: {
-    home
+    Home
   },
   data(){
     return{
