@@ -24,15 +24,15 @@
           </li>
 
           <li class="nav-item">
-            <router-link to="" class="nav-link">Actors</router-link>
+            <router-link to="/Actors" class="nav-link">Actors</router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="" class="nav-link">Profile</router-link>
+            <router-link to="/Profile" class="nav-link">Profile</router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="" class="nav-link">Contact</router-link>
+            <router-link to="/Contact" class="nav-link">Contact</router-link>
           </li>
         </ul>
         <form class=" recherche d-flex" role="search">
