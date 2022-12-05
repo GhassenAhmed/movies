@@ -1,6 +1,6 @@
 <template>
-  <div class=" container events py-5">
-    <MovieCard></MovieCard>
+  <div class="main">
+    <MovieCard ></MovieCard>
   </div>
 </template>
 
@@ -16,14 +16,11 @@ export default {
     return{
       
     }
-  }
+  },
 };
 </script>
 <style scoped>
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+  body{
+    background-color: #c5dfdf;
   }
 </style>

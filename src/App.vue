@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#"
-        ><i class="fa-solid fa-video"></i> Movie</a
+        ><i class="fa-solid fa-video"></i>  <b id="bold">Movie</b></a
       >
       <button
         class="navbar-toggler"
@@ -19,20 +19,20 @@
         <ul class="navbar-nav px-5">
           <li class="nav-item">
             <router-link to="/" class="nav-link active"
-              >Movies</router-link
+              ><b>Movies</b></router-link
             >
           </li>
 
           <li class="nav-item">
-            <router-link to="/Actors" class="nav-link">Actors</router-link>
+            <router-link to="/Actors" class="nav-link"><b>Actors</b></router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="/Profile" class="nav-link">Profile</router-link>
+            <router-link to="/Profile" class="nav-link"><b>Profile</b></router-link>
           </li>
 
           <li class="nav-item">
-            <router-link to="/Contact" class="nav-link">Contact</router-link>
+            <router-link to="/Contact" class="nav-link"><b>Contact</b></router-link>
           </li>
         </ul>
         <form class=" recherche d-flex" role="search">
@@ -76,8 +76,12 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   position: fixed;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 75px;
+  height: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+  border-bottom: solid 20px #9b0941b6;
+
 }
+
 a {
   color: #eeeeee !important;
   font-size: 20px !important;
@@ -98,5 +102,12 @@ footer h5,p{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom:5px;
+}
+bold{
+  font-weight:900;
+}
+.nav-item{
+  font-weight: 300;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 </style>
