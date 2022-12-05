@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#"
-        ><i class="fa-solid fa-video"></i>  <b id="bold">Movie</b></a
+        ><i class="fa-solid fa-video"></i> <b id="bold">Movie</b></a
       >
       <button
         class="navbar-toggler"
@@ -95,6 +95,8 @@ button {
 }
 footer{
   background: #cd0753;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  border-top: solid 20px #9b0941b6;
 }
 footer h5,p{
   color:#eeeeee;
