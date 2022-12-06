@@ -75,9 +75,6 @@
   background: #cd0753;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 150px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
-  border-bottom: solid 20px #9b0941b6;
 
 }
 
@@ -95,7 +92,7 @@ button {
 footer{
   background: #cd0753;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  border-bottom: solid 20px #9b0941b6;
+  border-top: solid 20px #9b0941b6;
 }
 footer h5,p{
   color:#eeeeee;
