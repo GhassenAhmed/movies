@@ -1,26 +1,23 @@
 <template>
   <div class="main">
-    <MovieCard ></MovieCard>
+    <MovieCardUpcoming></MovieCardUpcoming>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import MovieCard from"@/components/MovieCard.vue";
+import MovieCardUpcoming from "@/components/MovieCardUpcoming.vue";
 export default {
   name: "UpcomingView",
   components: {
-    MovieCard
+    MovieCardUpcoming,
   },
-  data(){
-    return{
-      
-    }
+  data() {
+    return {};
   },
 };
 </script>
 <style scoped>
-  body{
-    background-color: #c5dfdf;
-  }
+body {
+  background-color: #c5dfdf;
+}
 </style>
