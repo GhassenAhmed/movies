@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class=" h2 float-start mt-5" id="upcoming-h2">
-    <h2>Upcoming</h2>
-  </div>
+      <h2>Upcoming</h2>
+    </div>
 
  
     <!---------------row1------------>
@@ -16,8 +16,8 @@
         <div class="card" >
           <img :src="movie.postaire" class="card-img-top" alt="" style="height:450px"/>
           <div class="card-body mt-5">
-            <h5 class="card-header">{{movie.nomfilm}}</h5>
-            <p class="card-text">Genre | {{movie.genre}}<span></span> </p>
+            <h5 class="card-title">{{movie.nomfilm}}</h5>
+            <p class="card-text"><span style="color:black"><b>Genre |</b></span>  {{movie.genre}} </p>
           </div>
         </div>
       </router-link>
@@ -91,7 +91,7 @@ border-radius: 39px 0px 40px 0px;
 .card-text, .card-title{
   color: rgb(13, 4, 4);
   font-size: 20px;
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .card-body{
   height: 150px;

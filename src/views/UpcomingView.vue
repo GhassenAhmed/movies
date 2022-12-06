@@ -8,7 +8,7 @@
 // @ is an alias to /src
 import MovieCard from"@/components/MovieCard.vue";
 export default {
-  name: "HomeView",
+  name: "UpcomingView",
   components: {
     MovieCard
   },

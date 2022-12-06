@@ -1,7 +1,18 @@
 <template>
-    <div class="movie">
-        <h1>GhassenAhmed{{movie}}</h1>
-    </div>
+    
+      <div class="row d-flex flex-row">
+        <!-----------col1------------>
+        <div class="col" >
+          <img :src=movie.postaire style="height:40%;">
+        </div>
+        <!-----------col2------------>
+        <div class="col">
+          <h2>{{movie.nomfilm}}</h2>
+        </div>
+     
+      </div>  
+      
+    
 </template>
 <script>
 /*import axios from"axios";*/
@@ -30,5 +41,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+img{
+  clip-path: polygon(100% 0, 100% 35%, 95% 43%, 100% 52%, 100% 100%, 65% 100%, 0 100%, 0% 70%, 0 0, 40% 0);
+  float: left;
+}
+
 </style>

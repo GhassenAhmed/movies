@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import ActorsView from "../views/ActorsView.vue";
+import UpcomingView from "../views/UpcomingView.vue";
+import PopulaireView from "../views/PopulaireView.vue";
 import ProfileView from "../views/ProfileView.vue";
 import ContactView from "../views/ContactView.vue";
 import MovieView from "../views/MovieView.vue";
@@ -8,13 +8,13 @@ import MovieView from "../views/MovieView.vue";
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: HomeView,
+    name: "Upcoming",
+    component: UpcomingView,
   },
   {
-    path: "/Actors",
-    name: "Actors",
-    component: ActorsView,
+    path: "/Populaire",
+    name: "Populaire",
+    component: PopulaireView,
   },
   {
     path: "/Profile",

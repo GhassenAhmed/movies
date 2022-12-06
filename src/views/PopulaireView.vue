@@ -1,7 +1,7 @@
 <template>
     <div class=" container events py-5">
       
-     <h1>Actors</h1>
+     <h1>Populaire</h1>
     </div>
   </template>
   
@@ -9,7 +9,7 @@
   // @ is an alias to /src
   
   export default {
-    name: "ActorsView",
+    name: "PopulaireView",
     components: {
       
     },

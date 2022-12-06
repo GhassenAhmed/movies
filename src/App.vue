@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#"
-        ><i class="fa-solid fa-video"></i> <b id="bold">Movie</b></a
+        ><i class="fa-solid fa-video"></i>  <b id="bold">Movie</b></a
       >
       <button
         class="navbar-toggler"
@@ -19,12 +19,12 @@
         <ul class="navbar-nav px-5">
           <li class="nav-item">
             <router-link to="/" class="nav-link active"
-              ><b>Movies</b></router-link
+              ><b>Upcoming</b></router-link
             >
           </li>
 
           <li class="nav-item">
-            <router-link to="/Actors" class="nav-link"><b>Actors</b></router-link>
+            <router-link to="/Populaire" class="nav-link"><b>Populaire</b></router-link>
           </li>
 
           <li class="nav-item">
@@ -74,7 +74,6 @@
 .navbar {
   background: #cd0753;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-  position: fixed;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 150px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
@@ -96,7 +95,7 @@ button {
 footer{
   background: #cd0753;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  border-top: solid 20px #9b0941b6;
+  border-bottom: solid 20px #9b0941b6;
 }
 footer h5,p{
   color:#eeeeee;
