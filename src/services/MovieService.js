@@ -14,4 +14,10 @@ export default {
     getUpcoming(id){
         return apiClient.get("/upcoming/"+id);
     },
+    getPopulaires(){
+        return apiClient.get("/populaire");
+    },
+    getPopulaire(id){
+        return apiClient.get("/populaire/"+id);
+    }
 }

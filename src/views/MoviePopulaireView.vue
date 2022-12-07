@@ -30,7 +30,7 @@
 <script>
 import MoviesService from "@/services/MovieService.js";
 export default {
-  name: "MovieView",
+  name: "MoviePopulaireView",
   components: {},
   data() {
     return {
@@ -39,11 +39,11 @@ export default {
     };
   },
   props: {},
-
   created() {
     this.id = this.$route.params.id;
-    MoviesService.getUpcoming(this.id).then((response) => {
+    MoviesService.getPopulaire(this.id).then((response) => {
       this.movie = response.data;
+      console.table(response.data);
     });
   },
 };

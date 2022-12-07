@@ -7,7 +7,7 @@
 
   <div class="row">
     <div class="col-lg-4 col-md-5 px-5 py-5" v-for="movie of movies">
-      <router-link :to="/Movie/ + movie.id">
+      <router-link :to="/MovieUpcoming/ + movie.id">
         <div class="card">
           <img
             :src="movie.postaire"
@@ -78,7 +78,6 @@ export default {
   outline-offset: 0px;
   border-radius: 39px 0px 40px 0px;
 }
-
 .card-text,
 .card-title {
   color: rgb(13, 4, 4);

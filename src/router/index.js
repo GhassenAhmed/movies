@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import UpcomingView from "../views/UpcomingView.vue";
 import PopulaireView from "../views/PopulaireView.vue";
-import ProfileView from "../views/ProfileView.vue";
+import WatchlistView from "../views/WatchlistView.vue";
 import ContactView from "../views/ContactView.vue";
-import MovieView from "../views/MovieView.vue";
+import MovieUpcomingView from "../views/MovieUpcomingView.vue";
+import MoviePopulaireView from "../views/MoviePopulaireView.vue";
 
 const routes = [
   {
@@ -17,9 +18,9 @@ const routes = [
     component: PopulaireView,
   },
   {
-    path: "/Profile",
-    name: "Profile",
-    component: ProfileView,
+    path: "/Watchlist",
+    name: "Watchlist",
+    component: WatchlistView,
   },
   {
     path: "/Contact",
@@ -27,10 +28,16 @@ const routes = [
     component: ContactView,
   },
   {
-    path: "/Movie/:id",
-    name: "Movie",
-    component: MovieView,
+    path: "/MovieUpcoming/:id",
+    name: "MovieUpcoming",
+    component: MovieUpcomingView,
   },
+  {
+    path: "/MoviePopulaire/:id",
+    name: "MoviePopulaire",
+    component: MoviePopulaireView,
+  },
+  
 ];
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

@@ -28,7 +28,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link to="/Profile" class="nav-link"><b>Profile</b></router-link>
+            <router-link to="/Watchlist" class="nav-link"><b>Watchlist</b></router-link>
           </li>
 
           <li class="nav-item">
