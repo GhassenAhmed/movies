@@ -6,16 +6,16 @@
     </div>
   
     <div class="row">
-      <div class="col-lg-4 col-md-5 px-5 py-5" v-for="movie of movies">
+      <div class="col-lg-4 col-md-5 px-5 py-3" v-for="movie of movies">
         <router-link :to="/MoviePopulaire/ + movie.id">
           <div class="card">
             <img
               :src="movie.postaire"
               class="card-img-top"
               alt=""
-              style="height: 450px;"
+              style="height: 400px;"
             />
-            <div class="card-body mt-5">
+            <div class="card-body mt-3">
               <h5 class="card-title">{{ movie.nomfilm }}</h5>
               <p class="card-text">
                 <span style="color: black"><b>Genre |</b></span> {{ movie.genre }}
@@ -23,6 +23,7 @@
             </div>
           </div>
         </router-link>
+        <button type="button" class="btn btn-secondary mt-4">Add WatchList !</button>
       </div>
     </div>
     <router-view />
@@ -87,4 +88,9 @@
   .card-body {
     height: 150px;
   }
+  button{
+-webkit-box-shadow: -7px 7px 14px 0px rgba(0,0,0,0.74); 
+box-shadow: -7px 7px 14px 0px rgba(0,0,0,0.74);
+margin-right:1rem;
+}
   </style>

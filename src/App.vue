@@ -16,7 +16,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav px-5">
+        <ul class="navbar-nav px-5 ">
           <li class="nav-item">
             <router-link to="/" class="nav-link active"
               ><b>Upcoming</b></router-link
@@ -75,6 +75,9 @@
   background: #cd0753;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
 
 }
 

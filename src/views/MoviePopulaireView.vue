@@ -1,17 +1,17 @@
 <template>
   <div class="d-flex flex-row justify-content-center">
     <div class="row mt-5 px-5">
-      <div class="col-lg-6 col-md-5 col-xxl-6 py-5">
+      <div class="col-lg-4 col-md-5 col-xxl-4 py-5">
         <div class="card">
           <img
             :src="movie.postaire"
             class="card-img-top"
             alt=""
-            style="height: 600px;"
+            style="height: 500px;"
           />
         </div>
       </div>
-      <div class="col-lg-6 col-md-7 justify-content-center col-xxl-6 py-5">
+      <div class="col-lg-8 col-md-7 justify-content-center col-xxl-8 py-5">
         <div class="py-5">
           <h1 class="nomfilm">{{ movie.nomfilm }}</h1>
           <div class="">
@@ -73,7 +73,7 @@ img {
   border-radius: 10px;
 }
 #propos {
-  font-size: 25px;
+  font-size: 22px;
   text-align: justify;
   color: black;
 }
