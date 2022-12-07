@@ -1,7 +1,7 @@
 <template>
     <div class=" container events py-5">
       
-     <h1>Profile</h1>
+     <h1 class="mt-5">watchlist</h1>
     </div>
   </template>
   
