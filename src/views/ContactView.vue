@@ -5,7 +5,7 @@
       </div>
 
       <div class="col-md-8 col-lg-8 col-xxl-8">
-        <ReviewList></ReviewList>
+        <ReviewList @review-submitted="addReview"></ReviewList>
       </div>
       </div>
   </template>
@@ -22,8 +22,13 @@ import ReviewList from "@/components/ReviewList.vue";
     },
     data(){
       return{
-        
+        reviews:[],
       }
+    },
+    methods:{
+      addReview(review){
+            this.reviews.push(review);
+        },
     }
   };
   </script>
