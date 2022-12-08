@@ -22,10 +22,20 @@
               <span style="color: black"><b>Genre |</b></span> 
             </p>
           </div>
+        
+      </div>
+      <button
+        type="button"
+        class="btn btn-danger mt-4"
+        @click="Delete(i)"
+       
+      >
+        Delete !
+      </button>
         </div>
+       
       </div>
-
-      </div>
+      
   </template>
   
   <script>
@@ -40,8 +50,7 @@
       return{
         gallerie:[],
         loading:true,
-        test:[]
-
+      
 
       }
     },
@@ -52,6 +61,14 @@
       this.gallerie=JSON.parse(localStorage.getItem("watchlist"));
       console.log(this.gallerie);
     },
+    methods: {
+    Delete(film) {
+      this.gallerie=JSON.parse(localStorage.getItem("watchlist"));
+      this.gallerie = this.gallerie.filter((x) => x.nomfilm != film.nomfilm);
+      localStorage.setItem("watchlist",JSON.stringify(this.gallerie));
+      
+    },
+  },
 
   };
   </script>
