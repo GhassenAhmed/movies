@@ -1,83 +1,59 @@
 <template>
-    <div class="watch row py-5">
-
-     <div class=" mt-5 py-5" v-if="loading">
-      <div class="spinner-border" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-     </div>
-
-    <div  class="col-lg-4 col-md-5 px-5 py-5" v-for="i  in gallerie" >
-        <div class="card">
-        
-          <img 
-            :src="i.postaire"
-            class="card-img-top"
-            alt=""
-            style="height: 400px"
-          />
-          <div class="card-body mt-3">
-            <h5 class="card-title"></h5>
-            <p class="card-text">
-              <span style="color: black"><b>Genre |</b></span> 
-            </p>
-          </div>
-        
+  <h1>WatchList</h1>
+  <div class="watch row py-5">
+    <div class="col-lg-4 col-md-5 px-5 py-5" v-for="i in gallerie">
+      <div class="card">
+        <img
+          :src="i.postaire"
+          class="card-img-top"
+          alt=""
+          style="height: 400px"
+        />
+        <div class="card-body mt-3">
+          <h5 class="card-title">{{i.nomfilm}}</h5>
+          <p class="card-text">
+            <span style="color: black"><b>Genre |</b>{{i.genre}}</span>
+          </p>
+        </div>
       </div>
-      <button
-        type="button"
-        class="btn btn-danger mt-4"
-        @click="Delete(i)"
-       
-      >
+      <button type="button" class="btn btn-danger mt-4" @click="Delete(i)">
         Delete !
       </button>
-        </div>
-       
-      </div>
-      
-  </template>
-  
-  <script>
-  // @ is an alias to /src
-  
-  export default {
-    name: "ProfileView",
-    components: {
-      
-    },
-    data(){
-      return{
-        gallerie:[],
-        loading:true,
-      
+    </div>
+  </div>
+</template>
 
-      }
-    },
-    mounted(){
-      setTimeout(()=>this.loading=false,2000);
-    },
-    created(){
-      this.gallerie=JSON.parse(localStorage.getItem("watchlist"));
-      console.log(this.gallerie);
-    },
-    methods: {
-    Delete(film) {
-      this.gallerie=JSON.parse(localStorage.getItem("watchlist"));
-      this.gallerie = this.gallerie.filter((x) => x.nomfilm != film.nomfilm);
-      localStorage.setItem("watchlist",JSON.stringify(this.gallerie));
+<script>
+// @ is an alias to /src
+
+export default {
+  name: "ProfileView",
+  components: {},
+  data() {
+    return {
+      gallerie: [],
       
+    };
+  },
+ 
+  created() {
+    this.gallerie = JSON.parse(localStorage.getItem("watchlist"));
+    console.log(this.gallerie);
+  },
+  methods: {
+    Delete(film) {
+      this.gallerie = JSON.parse(localStorage.getItem("watchlist"));
+      this.gallerie = this.gallerie.filter((x) => x.nomfilm != film.nomfilm);
+      localStorage.setItem("watchlist", JSON.stringify(this.gallerie));
     },
   },
-
-  };
-  </script>
-  <style scoped>
-  
-  h1{
-    padding-top: 200px;
-  }
-  .card {
+};
+</script>
+<style scoped>
+h1 {
+  padding-top: 200px;
+}
+.card {
   box-shadow: -12px 6px 36px -4px rgba(0, 0, 0, 0.68);
   -webkit-box-shadow: -12px 6px 36px -4px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: -12px 6px 36px -4px rgba(0, 0, 0, 0.68);
@@ -102,4 +78,4 @@
 .card-body {
   height: 150px;
 }
-  </style>
+</style>

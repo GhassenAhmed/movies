@@ -31,7 +31,9 @@
 import MoviesService from "@/services/MovieService.js";
 export default {
   name: "MoviePopulaireView",
-  components: {},
+  components: {
+    
+  },
   data() {
     return {
       movie: null,

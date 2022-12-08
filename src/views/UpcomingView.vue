@@ -1,18 +1,23 @@
 <template>
   <div class="main">
+    </div>
+    <div>
     <MovieCardUpcoming></MovieCardUpcoming>
   </div>
 </template>
 
 <script>
 import MovieCardUpcoming from "@/components/MovieCardUpcoming.vue";
+
 export default {
   name: "UpcomingView",
   components: {
-    MovieCardUpcoming,
+    MovieCardUpcoming
   },
+
   data() {
-    return {};
+    return {
+    };
   },
 };
 </script>

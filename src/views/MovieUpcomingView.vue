@@ -31,14 +31,15 @@
 import MoviesService from "@/services/MovieService.js";
 export default {
   name: "MovieUpcomingView",
-  components: {},
+  components: {
+    
+  },
   data() {
     return {
       movie: null,
       id: -1,
     };
   },
-  props: {},
   created() {
     this.id = this.$route.params.id;
     MoviesService.getUpcoming(this.id).then((response) => {

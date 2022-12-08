@@ -30,8 +30,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link to="/Watchlist" class="nav-link"
-              ><b>Watchlist</b></router-link
+             <router-link to="/Watchlist" class="nav-link"><i class="bi bi-collection-play"></i> <b>Watchlist</b></router-link
             >
           </li>
 
@@ -53,19 +52,16 @@
       </div>
     </div>
   </nav>
+    <div class="row">
+      <div class=" mt-5 py-5" v-if="loading">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    </div>
   <router-view />
 
   <footer>
-    <!-- <div class="container-fluid py-5">
-      <h5>Ghassen Ahmed DSI22 <i class="fa-regular fa-copyright"></i></h5>
-      <p>Hi! I'm Ghassen. I was born in Bizerte, Tunisia,<br> and now I’m studen bachelor IT at the higher institute of technology of Bizerte</p>
-      <div class="social-media">
-        <a href="" class=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="" class=""><i class="fa-brands fa-twitter"></i></a>
-        <a href="" class=""><i class="fa-brands fa-github"></i></a>
-        <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div> -->
     <div class="row">
       <div class="col">
         <div class="container-fluid py-5">
@@ -102,7 +98,19 @@
     </div>
   </footer>
 </template>
-<script></script>
+<script>
+
+export default {
+    data(){
+      return{
+        loading: true,
+      }
+    },
+    mounted() {
+    setTimeout(() => (this.loading = false), 2000);
+   },
+  };
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

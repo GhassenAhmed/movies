@@ -2,6 +2,7 @@
   <div class="row" id="div-h2">
     <div class="col">
       <h2 class="mt-5">Upcoming</h2>
+      <i class="bi bi-bag-heart"></i>
     </div>
   </div>
 
