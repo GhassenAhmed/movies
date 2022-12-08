@@ -1,6 +1,6 @@
 <template>
-    <div class=" container events py-5">
-      <h1>Contact</h1>
+    <div class=" container events py-5 mt-5">
+      
      
     </div>
   </template>
