@@ -1,12 +1,17 @@
 <template>
   <div class="row" id="div-h2">
     <div class="col">
-      <h2 class="mt-5">Upcoming</h2>
-      <i class="bi bi-bag-heart"></i>
+      <h2 class="mt-5 float-start">Upcoming</h2>
     </div>
   </div>
 
   <div class="row">
+    <div class="alert alert-danger" role="alert" v-if="(etat==1)">
+      Movie already added !
+    </div>
+    <div class="alert alert-success" role="alert" v-else-if="(etat==0)">
+      Add your favorite movie to your watchlist!
+    </div>
     <div class="col-lg-4 col-md-5 px-5 py-4" v-for="movie of movies">
       <router-link :to="/MovieUpcoming/ + movie.id">
         <div class="card">
@@ -28,7 +33,7 @@
       <button
         type="button"
         class="btn btn-secondary mt-4"
-        @click.prevent="AddWatch(movie)"
+        @click="AddWatch(movie)"
        
       >
         Add WatchList !
@@ -46,6 +51,7 @@ export default {
     return {
       movies: null,
       watchlist: [],
+      etat:0
       
     };
   },
@@ -73,11 +79,12 @@ export default {
       if (this.watchlist.length > 0) {
         for (i = 0; i < this.watchlist.length; i++) {
           if (this.watchlist[i].nomfilm == item.nomfilm ) {
-            alert("film est deja ajoute");
+            this.etat=1;
             return;
           }
         }
       }
+      this.etat=0;
       this.watchlist.push(item);
       localStorage.setItem("watchlist", JSON.stringify(this.watchlist));
     },
