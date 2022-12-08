@@ -54,6 +54,7 @@
     </div>
   </nav>
   <router-view />
+
   <footer>
     <!-- <div class="container-fluid py-5">
       <h5>Ghassen Ahmed DSI22 <i class="fa-regular fa-copyright"></i></h5>
@@ -84,9 +85,9 @@
       </div>
       <div class="col">
         <div class="container-fluid py-5">
-          <h5>Ghassen Ahmed DSI22 <i class="fa-regular fa-copyright"></i></h5>
+          <h5>Mohamed Rayen Ben Hassine DSI22 <i class="fa-regular fa-copyright"></i></h5>
           <p>
-            Hi! I'm Ghassen. I was born in Bizerte, Tunisia,<br />
+            Hi! I'm Mohamed. I was born in Bizerte, Tunisia,<br />
             and now I’m studen bachelor IT at the higher institute of technology
             of Bizerte
           </p>

@@ -28,6 +28,7 @@
         type="button"
         class="btn btn-secondary mt-4"
         @click.prevent="AddWatch(movie)"
+       
       >
         Add WatchList !
       </button>
@@ -44,7 +45,13 @@ export default {
     return {
       movies: null,
       watchlist: [],
+      
     };
+  },
+  created() {
+    MovieService.getUpcomings().then((response) => {
+      this.movies = response.data;
+    });
   },
   mounted() {
     this.watchlist =
@@ -52,15 +59,11 @@ export default {
         ? localStorage.setItem("watchlist", JSON.stringify(this.watchlist))
         : JSON.parse(localStorage.getItem("watchlist"));
   },
-  created() {
-    MovieService.getUpcomings().then((response) => {
-      this.movies = response.data;
-    });
-  },
   methods: {
     AddWatch(film) {
       let i = 0;
       let item = {
+        index:'watchlist',
         id: film.id,
         postaire: film.postaire,
         nomfilm: film.nomfilm,
@@ -68,7 +71,7 @@ export default {
       };
       if (this.watchlist.length > 0) {
         for (i = 0; i < this.watchlist.length; i++) {
-          if (this.watchlist[i].id == item.id) {
+          if (this.watchlist[i].nomfilm == item.nomfilm ) {
             alert("film est deja ajoute");
             return;
           }

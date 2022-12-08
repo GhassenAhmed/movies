@@ -48,15 +48,15 @@ export default {
   data() {
     return {
       movies: null,
-      watchlist2: [],
+      watchlist: [],
       etat: 0,
     };
   },
   mounted() {
-    this.watchlist2 =
-      JSON.parse(localStorage.getItem("watchlist2")) == null
-        ? localStorage.setItem("watchlist2", JSON.stringify(this.watchlist2))
-        : JSON.parse(localStorage.getItem("watchlist2"));
+    this.watchlist =
+      JSON.parse(localStorage.getItem("watchlist")) == null
+        ? localStorage.setItem("watchlist", JSON.stringify(this.watchlist))
+        : JSON.parse(localStorage.getItem("watchlist"));
   },
   created() {
     MovieService.getPopulaires().then((response) => {
@@ -67,23 +67,24 @@ export default {
     AddWatch(film) {
       let i = 0;
       let item = {
+        index:'watchlist2',
         id: film.id,
         postaire: film.postaire,
         nomfilm: film.nomfilm,
         genre: film.genre,
-      };7
+      };
       
-      if (this.watchlist2.length > 0) {
-        for (i = 0; i < this.watchlist2.length; i++) {
-          if (this.watchlist2[i].id == item.id) {
+      if (this.watchlist.length > 0) {
+        for (i = 0; i < this.watchlist.length; i++) {
+          if (this.watchlist[i].nomfilm == item.nomfilm) {
             this.etat=1;
             return;
           }
         }
       }
       this.etat=0;
-      this.watchlist2.push(item);
-      localStorage.setItem("watchlist2", JSON.stringify(this.watchlist2));
+      this.watchlist.push(item);
+      localStorage.setItem("watchlist", JSON.stringify(this.watchlist));
     },
   },
 };
