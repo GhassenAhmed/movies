@@ -1,18 +1,24 @@
 <template>
   <div class="container px-5 mt-5">
-    <div class="row gap-5">
-
-      <ul class=" list-group card shadow-lg col" v-for="(review, index) in reviews" :key="index">
-      <li class="list-group-item" style="background-color: #cd0753">
-        {{ review.name }}
-      </li>
-      <li class="list-group-item">{{ review.review }}</li>
-      <li class="list-group-item">{{ review.favoriteMovies }}</li>
-      <li class="list-group-item">{{ review.rating }}<i class="bi bi-star"></i></li>
-      <li class="list-group-item">{{ review.recommandation }}</li>
-    </ul>
+    <div class="row gap-5 ">
+      <div class="col"
+      v-for="(review, index) in reviews"
+          :key="index">
+        <ul
+          class="list-group card shadow-lg"
+        >
+          <li class="list-group-item" style="background-color: #cd0753">
+            {{ review.name }}
+          </li>
+          <li class="list-group-item">{{ review.review }}</li>
+          <li class="list-group-item">{{ review.favoriteMovies }}</li>
+          <li class="list-group-item">
+            {{ review.rating }}<i class="bi bi-star"></i>
+          </li>
+          <li class="list-group-item">{{ review.recommandation }}</li>
+        </ul>
+      </div>
     </div>
-    
   </div>
 </template>
 <script>
@@ -34,17 +40,16 @@ li {
   width: 50%;
   text-align: left;
 }
-li:first-child{
+li:first-child {
   width: 103%;
 }
-.row{
+.row {
   width: 100%;
 }
-li{
+li {
   /* border: 2px solid #46051e; */
 }
-.card{
+.card {
   width: 50% !important;
 }
-
 </style>
