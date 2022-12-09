@@ -1,11 +1,11 @@
 <template>
       <div class="row mt-5 py-5">
         <div class="col-md-4 col-lg-4 col-xxl-4 px-5">
-        <ReviewFrom></ReviewFrom>
+        <ReviewFrom @review-submitted="addReview"></ReviewFrom>
       </div>
 
       <div class="col-md-8 col-lg-8 col-xxl-8">
-        <ReviewList @review-submitted="addReview"></ReviewList>
+        <ReviewList :reviews="reviews" v-if="reviews.length"></ReviewList>
       </div>
       </div>
   </template>
@@ -28,6 +28,7 @@ import ReviewList from "@/components/ReviewList.vue";
     methods:{
       addReview(review){
             this.reviews.push(review);
+            console.log(this.reviews);
         },
     }
   };

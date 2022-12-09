@@ -52,7 +52,7 @@
       </div>
     </div>
   </nav>
-    <div class="row">
+    <div class="row ">
       <div class=" mt-5 py-5" v-if="loading">
       <div class="spinner-border text-danger" role="status">
         <span class="visually-hidden">Loading...</span>

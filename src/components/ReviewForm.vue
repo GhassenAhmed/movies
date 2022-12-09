@@ -1,41 +1,41 @@
 <template>
-  <form>
+  <form class="review-form" @submit.prevent="onSubmit">
     <!-- name -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label float-start px-1"
         >Your Name</label
       >
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" id="nom" v-model="name"/>
     </div>
     <!-- Favorite movies  -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label float-start px-1"
         >Your Favorite movies</label
       >
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" id="favoriteMovies" v-model="favoriteMovies"/>
     </div>
     <!-- Recomendation  -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label float-start px-1"
         >Recomendation</label
       >
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" id="recommandation" v-model="recommandation"/>
     </div>
     <!-- rating  -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label float-start px-1"
         >Rating</label
       >
-      <input type="number" class="form-control" />
+      <input type="number" class="form-control" id="rating" v-model.number="rating" />
     </div>
     <!-- Review  -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label float-start px-1"
         >Review</label
       >
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" id="review" v-model.number="review"/>
     </div>
-    <input type="submit" id="btn" class="btn btn-primary px-3" value="Send">
+    <input type="submit" id="btn" class="btn btn-primary px-3" value="Send" @submit.prevent="onSubmit">
   </form>
 </template>
 <script>
@@ -70,6 +70,7 @@ export default {
             this.favoriteMovies='';
             this.rating=null;
             this.recommandation=null;
+
         }
           
         },
