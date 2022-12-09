@@ -84,7 +84,7 @@ input {
 input:hover {
   background-color: rgb(245, 250, 249);
   height: 50px;
-  border: 3px solid rgb(102, 2, 72);
+  border: 2px solid rgb(181, 17, 132);
   cursor: pointer;
 }
 .btn-primary {

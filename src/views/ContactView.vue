@@ -30,7 +30,9 @@ import ReviewList from "@/components/ReviewList.vue";
             this.reviews.push(review);
             console.log(this.reviews);
         },
-    }
+    },
+    
+
   };
   </script>
   <style scoped>

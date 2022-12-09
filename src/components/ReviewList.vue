@@ -1,7 +1,7 @@
 <template>
   <div class="container px-5 mt-5">
-    <div class="row gap-5 ">
-      <div class="col"
+    <div class="row py-5">
+      <div class="col-5"
       v-for="(review, index) in reviews"
           :key="index">
         <ul
@@ -37,19 +37,13 @@ export default {
 li {
   list-style-type: none;
   border: none;
-  width: 50%;
+  width: 100%;
   text-align: left;
 }
 li:first-child {
-  width: 103%;
-}
-.row {
   width: 100%;
 }
-li {
-  /* border: 2px solid #46051e; */
-}
 .card {
-  width: 50% !important;
+  width: 100% ;
 }
 </style>
