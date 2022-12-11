@@ -1,6 +1,6 @@
 <template>
       <div class="row mt-5 py-5">
-        <div class="col-md-4 col-lg-4 col-xxl-4 px-5">
+        <div class="col-md-4 col-lg-4 col-xxl-4 px-5 mt-5">
         <ReviewFrom @review-submitted="addReview"></ReviewFrom>
       </div>
 

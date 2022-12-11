@@ -1,7 +1,7 @@
 <template>
   <div class="row" id="div-h2">
     <div class="col">
-      <h2 class="mt-5 float-start">Populaire</h2>
+      <h2 class="mt-5 float-start" :id="headingId">Populaire</h2>
     </div>
   </div>
 
@@ -50,6 +50,7 @@ export default {
       movies: null,
       watchlist: [],
       etat: 0,
+      headingId:'Populaire',
     };
   },
   mounted() {
@@ -101,7 +102,7 @@ export default {
   margin-left: 20px;
   padding-bottom: 10px;
 }
-#upcoming-h2:hover {
+#Populaire:hover {
   border-bottom: 3px solid #cd0753;
 }
 #div-h2 {

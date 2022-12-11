@@ -1,5 +1,5 @@
 <template>
-  <h1>WatchList</h1>
+  <h1>WatchList <span class="watchlistLength">{{watchlistMovies}} <i class="bi bi-cart-check"></i></span></h1>
   <div class="watch row py-5">
     <div class="col-lg-4 col-md-5 px-5 py-5" v-for="i in gallerie">
       <div class="card">
@@ -32,7 +32,6 @@ export default {
   data() {
     return {
       gallerie: [],
-      
     };
   },
  
@@ -47,6 +46,11 @@ export default {
       localStorage.setItem("watchlist", JSON.stringify(this.gallerie));
     },
   },
+  computed:{
+    watchlistMovies(){
+      return this.gallerie.length;
+    }
+  }
 };
 </script>
 <style scoped>
@@ -77,5 +81,11 @@ h1 {
 }
 .card-body {
   height: 150px;
+}
+.watchlistLength{
+  margin-left: 1rem;
+  color:#cd0753 ;
+  border-bottom: 5px solid black;
+  border-radius: 30%;
 }
 </style>

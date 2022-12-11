@@ -1,7 +1,7 @@
 <template>
   <div class="row" id="div-h2">
     <div class="col">
-      <h2 class="mt-5 float-start">Upcoming</h2>
+      <h2 class="mt-5 float-start" :id="headingId" >Upcoming</h2>
     </div>
   </div>
 
@@ -51,7 +51,8 @@ export default {
     return {
       movies: null,
       watchlist: [],
-      etat:0
+      etat:0,
+      headingId:'Upcoming',
       
     };
   },
@@ -99,7 +100,7 @@ export default {
     "Lucida Sans", Arial, sans-serif;
   position: absolute;
 }
-#upcoming-h2:hover {
+#Upcoming:hover {
   border-bottom: 3px solid #cd0753;
 }
 #div-h2 h2 {
