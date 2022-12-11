@@ -31,8 +31,8 @@
 
           <li class="nav-item">
             <router-link to="/Watchlist" class="nav-link"
-              ><i class="bi bi-collection-play"></i>
-              <b>Watchlist</b></router-link
+              >watchlist
+              <b><i class="bi bi-collection-play"></i></b></router-link
             >
           </li>
 
