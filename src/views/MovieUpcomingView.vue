@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-row justify-content-center">
+  <div class="d-flex flex-row justify-content-center mt-5">
     <div class="row mt-5 px-5">
       <div class="col-lg-6 col-md-5 col-xxl-6 py-5">
         <div class="card">

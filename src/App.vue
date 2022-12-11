@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#"
-        ><i class="fa-solid fa-video"></i> <b id="bold">Movie</b></a
+        ><img src="./assets/logo.png" alt=""></a
       >
       <button
         class="navbar-toggler"
@@ -128,7 +128,9 @@ export default {
   z-index: 999;
   
 }
-
+img{
+  width: 100px;
+}
 a {
   color: #eeeeee !important;
   font-size: 20px !important;
