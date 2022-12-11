@@ -1,13 +1,9 @@
 <template>
   <div class="container px-5 mt-5">
     <div class="row py-5">
-      <div class="col-5"
-      v-for="(review, index) in reviews"
-          :key="index">
-        <ul
-          class="list-group card shadow-lg"
-        >
-          <li class="list-group-item" style="background-color: #cd0753">
+      <div class="col-5" v-for="(review, index) in reviews" :key="index">
+        <ul class="list-group card shadow-lg">
+          <li class="list-group-item name" style="background-color: #cd0753">
             {{ review.name }}
           </li>
           <li class="list-group-item">{{ review.review }}</li>
@@ -44,6 +40,12 @@ li:first-child {
   width: 100%;
 }
 .card {
-  width: 100% ;
+  width: 100%;
+}
+.name {
+  color: aliceblue;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 </style>
