@@ -2,8 +2,8 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#"
-        ><img src="./assets/logo.png" alt=""></a
-      >
+        ><img src="./assets/logo.png" alt=""
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -30,7 +30,9 @@
           </li>
 
           <li class="nav-item">
-             <router-link to="/Watchlist" class="nav-link"><i class="bi bi-collection-play"></i> <b>Watchlist</b></router-link
+            <router-link to="/Watchlist" class="nav-link"
+              ><i class="bi bi-collection-play"></i>
+              <b>Watchlist</b></router-link
             >
           </li>
 
@@ -52,13 +54,13 @@
       </div>
     </div>
   </nav>
-    <div class="row ">
-      <div class=" mt-5 py-5" v-if="loading">
+  <div class="row">
+    <div class="mt-5 py-5" v-if="loading">
       <div class="spinner-border text-danger" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-    </div>
+  </div>
   <router-view />
 
   <footer>
@@ -81,7 +83,10 @@
       </div>
       <div class="col">
         <div class="container-fluid py-5">
-          <h5>Mohamed Rayen Ben Hassine DSI22 <i class="fa-regular fa-copyright"></i></h5>
+          <h5>
+            Mohamed Rayen Ben Hassine DSI22
+            <i class="fa-regular fa-copyright"></i>
+          </h5>
           <p>
             Hi! I'm Mohamed. I was born in Bizerte, Tunisia,<br />
             and now I’m studen bachelor IT at the higher institute of technology
@@ -99,17 +104,17 @@
   </footer>
 </template>
 <script>
-
 export default {
-    data(){
-      return{
-        loading: true,
-      }
-    },
-    mounted() {
+  data() {
+    return {
+      loading: true,
+    };
+  },
+
+  mounted() {
     setTimeout(() => (this.loading = false), 2000);
-   },
-  };
+  },
+};
 </script>
 <style>
 #app {
@@ -126,9 +131,8 @@ export default {
   position: fixed !important;
   width: 100%;
   z-index: 999;
-  
 }
-img{
+img {
   width: 100px;
 }
 a {
