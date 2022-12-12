@@ -8,17 +8,19 @@
         <ReviewList :reviews="reviews" v-if="reviews.length"></ReviewList>
       </div>
       </div>
+      <AboutHeader></AboutHeader>
   </template>
   
   <script>
   // @ is an alias to /src
 import ReviewFrom from "@/components/ReviewForm.vue";
 import ReviewList from "@/components/ReviewList.vue";
+import AboutHeader from '@/components/AboutHeader.vue';
   export default {
     
     name: "ContactView",
     components: {
-      ReviewFrom,ReviewList
+      ReviewFrom,ReviewList,AboutHeader
     },
     data(){
       return{
