@@ -37,6 +37,13 @@
           </li>
 
           <li class="nav-item">
+            <router-link to="/about" class="nav-link"
+              >
+              <b>About</b></router-link
+            >
+          </li>
+
+          <li class="nav-item">
             <router-link to="/Contact" class="nav-link"
               ><b>Contact</b></router-link
             >

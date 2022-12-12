@@ -3,6 +3,7 @@ import UpcomingView from "../views/UpcomingView.vue";
 import PopulaireView from "../views/PopulaireView.vue";
 import WatchlistView from "../views/WatchlistView.vue";
 import ContactView from "../views/ContactView.vue";
+import AboutView from "../views/AboutView.vue";
 import MovieUpcomingView from "../views/MovieUpcomingView.vue";
 import MoviePopulaireView from "../views/MoviePopulaireView.vue";
 
@@ -26,6 +27,11 @@ const routes = [
     path: "/Contact",
     name: "Contact",
     component: ContactView,
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: AboutView,
   },
   {
     path: "/MovieUpcoming/:id",
