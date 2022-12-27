@@ -7,7 +7,7 @@
       <h2>No Account / Registration Required</h2>
       <p>{{account}}</p>
       <h2>Good Reviews</h2>
-      <p>{{review}}</p>
+      <p>{{}}</p>
     </div>
   </template>
   <script>
