@@ -17,7 +17,7 @@ export default {
             review:"Always read user reviews before entering a streaming site to avoid damaging your device or getting jailbroken. After reading them, you can also easily find the streaming site where you want to watch free movies online."
         }
        
-    }
+    
   };
 </script>
 <style>
