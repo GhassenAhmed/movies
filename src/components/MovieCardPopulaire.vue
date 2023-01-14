@@ -1,7 +1,7 @@
 <template>
   <div class="row" id="div-h2">
     <div class="col">
-      <h2 class="mt-5 float-start" :id="headingId">Populaire</h2>
+      <h2 class="mt-5 float-start" id="headingId">Populaire</h2>
     </div>
   </div>
 
