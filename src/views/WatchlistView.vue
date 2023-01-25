@@ -1,5 +1,5 @@
 <template>
-  <h1>WatchList <span class="watchlistLength">{{watchlistMovies}} <i class="bi bi-cart-check"></i></span></h1
+  <h1>WatchList <span class="watchlistLength">{{watchlistMovies}} <i class="bi bi-cart-check"></i></span></h1>
   <div class="row mt-2 w-100 py-3">
      <div class="col-lg-6 w-50">
       <form  class="mx-5" >
